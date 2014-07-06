@@ -5,15 +5,12 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.4'
 
 
-group :production do 
+
 	gem 'pg'
-end
 
 
-# Use sqlite3 as the database for Active Record
-group :development, :test do
-	gem 'sqlite3'
-end
+
+
 
 
 # Use SCSS for stylesheets
@@ -48,4 +45,6 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'rails_12factor', group: :production
 
